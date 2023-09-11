@@ -14,6 +14,8 @@ namespace ConsoleApp1
             Console.CursorVisible = false;
 
             const int WAIT_TICK = 1000 / 30;
+            const char CIRCLE = '\u25cf';
+
             // 시간 측정
             int lastTick = 0;
 
@@ -38,8 +40,18 @@ namespace ConsoleApp1
                 // 로직
 
                 // 렌더링
-                Console.WriteLine("Hello World");
+                
                 Console.SetCursorPosition(0, 0);
+
+                for (int i = 0; i < 25; i++)
+                {
+                    for (int j = 0; j < 25; j++)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write(CIRCLE);
+                    }
+                    Console.WriteLine();
+                }
 
             }
         }
