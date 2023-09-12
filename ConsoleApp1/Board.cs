@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
-
     class  MyList<T>
     {
         const int DEFAUT_SIZE = 1;

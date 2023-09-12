@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
  
-    class MyList<T>
+    // 어떠한 값이던 상관없지만 값형식이여야한다.
+    // 참조형식인 경우 class 사용가능
+    class MyList<T> where T : struct
     {
         // object 는 박싱 언박싱으로 비용이 증가한다.
         object[] arr = new object[10];
