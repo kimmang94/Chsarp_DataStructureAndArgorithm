@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
+
+    class  MyList
+    {
+
+    }
+
     class Board
     {
         public int[] _data = new int[25]; // 배열
@@ -15,7 +21,15 @@ namespace Algorithm
 
         public void Initialize()
         {
+            _data2.Add(101);
+            _data2.Add(102);
+            _data2.Add(103);
+            _data2.Add(104);
+            _data2.Add(105);
 
+            int temp = _data2[2];
+
+            _data2.RemoveAt(2);
         }
     }
 }
